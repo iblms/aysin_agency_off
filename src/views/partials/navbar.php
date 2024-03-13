@@ -12,7 +12,7 @@
             <header>
                 <nav >
                     <div>
-                        <img src="images/titre.svg" alt="" style="width: 250px; padding-left: 40px;">
+                        <img src="<?=PROJECT_FOLDER ?>/src/images/titre.svg" alt="" style="width: 250px; padding-left: 40px;">
 
                         <ul>
                             <div>

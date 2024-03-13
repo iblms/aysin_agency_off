@@ -7,7 +7,7 @@ require_once __DIR__ . '/common.php';
 require_once __DIR__ . '/db.php';
 
 // config du site
-$existing_pages = ['accueil', 'expertises', 'contact', 'login', 'logotype', 'register', 'type_siteweb', 'whosheet','bel_type', 'email'];
+$existing_pages = ['accueil', 'expertises', 'contact', 'login', 'register'];
 
 // les classes
 // require_once __DIR__ . '/class/User.php';

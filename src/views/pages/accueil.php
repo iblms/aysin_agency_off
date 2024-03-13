@@ -9,7 +9,7 @@ ob_start(); ?>
     <?php require_once __DIR__ . '/../partials/navbar.php'; ?>
     <main>
         <div class="slogan">
-            <img src="/images/component_3.svg" alt="" width="1440">
+            <img src="<?=PROJECT_FOLDER ?>/src/images/component_3.svg" alt="" width="1440">
         </div>
 
         <div class="text1">
@@ -17,12 +17,12 @@ ob_start(); ?>
         </div>
 
         <div class="home-buttons">
-            <button><a href="">Consulter le catalogue</a></button>
-            <button><a href="">Demander un accompagnement</a></button>
+            <button><a href="<?=PROJECT_FOLDER ?>">Consulter le catalogue</a></button>
+            <button><a href="<?=PROJECT_FOLDER ?>">Demander un accompagnement</a></button>
         </div>
 
         <div>
-            <img src="/images/component_6.svg" alt="" style="padding-top: 60px;">
+            <img src="<?=PROJECT_FOLDER ?>/src/images/component_6.svg" alt="" style="padding-top: 60px;">
         </div>
 
         <div class="title2">
