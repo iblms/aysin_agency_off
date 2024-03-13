@@ -16,18 +16,18 @@
 
                         <ul>
                             <div>
-                                <li><a href="<?=PROJECT_FOLDER ?>www/?p=accueil">Accueil</a></li>
+                                <li><a href="<?=PROJECT_FOLDER ?>www/?p=accueil" style="font-family: Outfit, sans-serif;">Accueil</a></li>
                             </div>
                             <div>
-                                <li><a href="<?=PROJECT_FOLDER ?>www/?p=expertises">Nos expertises</a></li>
+                                <li><a href="<?=PROJECT_FOLDER ?>www/?p=expertises" style="font-family: Outfit, sans-serif;">Expertises</a></li>
                             </div>
                             <div>
-                                <li><a href="<?=PROJECT_FOLDER ?>www/?p=contact">Contact</a></li>
+                                <li><a href="<?=PROJECT_FOLDER ?>www/?p=contact" style="font-family: Outfit, sans-serif;">Contact</a></li>
                             </div>
                         </ul>
 
                         <div>
-                            <button><a href="<?=PROJECT_FOLDER ?>www/?p=register">S'inscrire</a></button>
+                            <button><a href="<?=PROJECT_FOLDER ?>www/?p=register">Inscription</a></button>
                         </div>
                     </div>
                 </nav>

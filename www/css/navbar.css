@@ -23,6 +23,7 @@ nav div {
 ul {
     display: flex;
     list-style: none;
+    margin-right: 80px;
 }
 
 a {
@@ -32,9 +33,20 @@ a {
 
 li a {
     display: flex;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
+button a {
+    color: white;
+    font-family: "Outfit", sans-serif;
+}
 button {
     margin-right: 40px;
+    padding: 7px 25px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #9F6D21;
+    border: none;
+    border-radius: 3px;
+    
 }
