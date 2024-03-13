@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+}
+
+/* MAIN */
+
+.slogan img {
+    padding-top: 25px;
+}
+
+.text1 {
+    font-weight: 300;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 15px;
+    padding-left: 80px;
+}
+
+.home-buttons button {
+    border: none;
+    background-color: white;
+}
+
+.home-buttons a {
+    padding: 15px 30px;
+    background-color: #EDE3DA;
+    border: none;
+    border-radius: 10px;
+    color: #9F6D21;
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title2 p {
+    font-size: 62px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 80px;
+}
+
+.all-line {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.line {
+    border: 1px solid;
+    padding: 1.5px 200px;
+    background-color: #9F6D21;
+    border: none;
+}
+
+.line1, .line2, .line3, .line4, .line5, .line6, .line7, .line8 {
+    font-size: 32px;
+    font-weight: 200;
+    color: #9F6D21;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paragraph {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Monetserrat', sans-serif;
+    background-color: #ffffff;
+}
+/*---- footer -----*/
+.footer_first {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    color: white;
+    justify-content: space-evenly;
+    padding-bottom: 3rem;
+
+}
+.logo_social {
+    border-radius: 5%;
+    font-size: 26px;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    padding-left: 5rem;
+}
+.logo_payment {
+    font-size: 30px;
+    display: flex;
+    gap: 15px;
+    margin-right: 15px;
+    padding: 1.5% 2.5%;
+        
+    
+}
+.footer_second{
+    display: flex;
+    border-top: inset;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+.footer_li {
+    list-style: none;
+}
+.footer_title_grp{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    list-style: none;
+    padding-bottom: 2rem;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+.footer_grp1, .footer_grp2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.footer_li{
+    gap: 10px;
+}
+
+.footer_list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+}
+
+.footer_global{
+    padding-top: 7rem;
+}

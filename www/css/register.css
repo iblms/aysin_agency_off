@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Monetserrat', sans-serif;
+    background-color: #ffffff;
+}
+/*-------- CSS CASE INSCRIPTION -------- */
+.case2{
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+/* form case connexion */
+.form-box {
+    width: 403px;
+    height: 600px ;
+    background: #f1f7fe;
+    overflow: hidden;
+    border-radius: 15px;
+    color: #010101;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    background-color: #F4EDDE;
+    
+}
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px 24px;
+    gap: 1px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/*Form text*/
+.title {
+    font-weight: bold;
+    font-size: 32px;
+    color: black;
+    margin-bottom: 45px;
+
+}
+ /*Inputs box*/
+.input-container {
+    position: relative;
+}
+.input-container input, .info_years input {
+    background-color: white;
+    padding: 1rem;
+    padding-right: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+    outline: none;
+    border: 1.5px solid #e5e7eb;
+    margin: 8px 0;
+}
+.input-container input, .info_years input{
+    font-size: 14px;
+    color: black;
+}
+ /*Button*/
+ .button_login {
+    background-color: #c8ac82;
+    color: #fff;
+    border: 0;
+    border-radius: 7px;
+    display: flex;
+    padding: 13px 20px 13px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+} 
+.button_login:hover {
+    background-color: #a9916d;
+}
+/* select année page register */
+.info_years{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+}
+.info_years select{
+    width: 5.7rem;
+    padding: 1rem;
+    padding-right: 8px;
+}
+.form-section {
+    font-size: .85rem;
+    background-color: #F4EDDE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    margin-top: -19px;
+}
+  
+.form-section a {
+    font-weight: bold;
+    color: #c8ac82;
+    transition: color .3s ease;
+    text-decoration: none;
+    font-size: 14px;
+}
+.form-section p {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+  
+.form-section a:hover {
+    color: #a9916d;
+    text-decoration: none;
+}

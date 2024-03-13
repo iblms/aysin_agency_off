@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+}
+
+/* NAVBAR */
+
+nav {
+    padding-top: 20px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li a {
+    display: flex;
+    padding-left: 40px;
+}
+
+button {
+    margin-right: 40px;
+}
