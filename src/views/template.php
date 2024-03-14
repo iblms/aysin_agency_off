@@ -16,7 +16,7 @@
     </head>
     <body>
         <?= $navbar ?>
-        <?= $home ?>
+        <?= $page_content ?>
         <?= $footer ?>
     </body>
 </html>

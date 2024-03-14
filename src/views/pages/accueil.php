@@ -121,4 +121,4 @@ ob_start(); ?>
         </div>
     </main>
 </body>
-<?php $home = ob_get_clean();
+<?php $page_content = ob_get_clean();
