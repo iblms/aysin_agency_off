@@ -18,7 +18,7 @@ ob_start(); ?>
 
             <div class="home-buttons">
                 <button><a href="<?=PROJECT_FOLDER ?>">Consulter le catalogue</a></button>
-                <button><a href="<?=PROJECT_FOLDER ?>">Demander un accompagnement</a></button>
+                <button><a href="<?=PROJECT_FOLDER ?>www/?p=personnalisation">Demander un accompagnement</a></button>
             </div>
         </div>
 
