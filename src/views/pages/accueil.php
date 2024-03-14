@@ -4,26 +4,6 @@ $title = "Aysin Agency - Le Marketing Digital d'excellence";
 require_once __DIR__ .'/../../utils/common.php';
 
 ob_start(); ?>
-    <style>
-        .scroll-container {
-            display: flex;
-            overflow: hidden;
-        }
-
-        .scroll-container img {
-            animation: move-rtl 20s linear infinite;
-        }
-
-        @keyframes move-rtl {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-    </style>
-
 <body>
     <?php require_once __DIR__ . '/../partials/navbar.php'; ?>
     <main>
@@ -116,6 +96,28 @@ ob_start(); ?>
 
             <p class="line"> </p>
 
+        </div>
+
+        <div class="title3">
+            <p>Quelques chiffres nous concernant</p>
+        </div>
+
+        <div class="all-box">
+            <div class="box1">
+                <p class="number">9999</p>
+
+                <p class="text">de clients conquis par nos<br> templates</p>
+            </div>
+            <div class="box2">
+                <p class="number">9999</p>
+
+                <p class="text">d’accompagnements<br> personnalisés réalisés</p>
+            </div>
+            <div class="box3">
+                <p class="number">9,9/5</p>
+
+                <p class="text">sur Google Review</p>
+            </div>
         </div>
     </main>
 </body>
