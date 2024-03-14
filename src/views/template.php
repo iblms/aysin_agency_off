@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/login.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/register.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/personnalisation.css">
+        <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/catalogue.css">
         <script src="https://kit.fontawesome.com/2822932118.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

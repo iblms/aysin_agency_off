@@ -11,6 +11,7 @@ ob_start(); ?>
         <div class="slogan">
             <img src="<?=PROJECT_FOLDER ?>/src/images/component_8.svg" alt="" width="1440">
         </div>
+        
         <div class="maxi-box">
             <!-- <div class="all-block">
                     <div class="div1">
