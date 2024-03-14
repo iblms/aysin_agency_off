@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+}
+
+/* MAIN */
+
+.box-template1 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 150px;
+}
+
+.info-template {
+    font-size: 20px;
+    background-color: #EDE3DA;
+    margin-top: -4px;
+    max-width: 357px;
+    border-radius: 0px 0px 3px 3px;
+}
+
+.title-template {
+    font-size: 20px;
+    color: #9F6D21;
+}
+
+.title-prix {
+    color: #9F6D21;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 13px;
+    padding-left: 15px;
+    padding-bottom: 40px;
+}
+
+.prix {
+    padding-left: 90px;
+}
+
+.info-template button {
+    background-color: #9F6D21;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    margin-right: 0px;
+    margin-left: 210px;
+    margin-bottom: 13px;
+}

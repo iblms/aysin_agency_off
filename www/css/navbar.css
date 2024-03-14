@@ -40,6 +40,7 @@ button a {
     color: white;
     font-family: "Outfit", sans-serif;
 }
+
 button {
     margin-right: 40px;
     padding: 7px 25px;
@@ -48,5 +49,4 @@ button {
     background-color: #9F6D21;
     border: none;
     border-radius: 3px;
-    
 }
