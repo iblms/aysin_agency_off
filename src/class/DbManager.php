@@ -131,4 +131,24 @@ class DbManager {
         $pdoStatement->bindParam(':email', $email, PDO::PARAM_STR);
         $pdoStatement->execute();
     }
+
+    // function pour insérer dans la bdd et function pour gérer connexion
+    function insertUserInfoRegister(string $nom, string $prenom, string $email, string $dateOfBirth, string $mdp){
+        $mdpHash = password_hash($mdp, PASSWORD_DEFAULT); //on hash le mdp avant de l'ajouter dans la bddd
+        $pdoStatement = $this->db->prepare('INSERT INTO utilisateur (prenom, nom, email, mdp, date_of_birth) VALUES (:prenom, :nom, :email, :mdp, :date_of_birth)');
+        $pdoStatement->bindParam(':prenom', $prenom, PDO::PARAM_STR);
+        $pdoStatement->bindParam(':nom', $nom, PDO::PARAM_STR);
+        $pdoStatement->bindParam(':email', $email, PDO::PARAM_STR);
+        $pdoStatement->bindParam(':date_of_birth', $dateOfBirth);
+        $pdoStatement->bindParam(':mdp', $mdpHash, PDO::PARAM_STR);
+        $pdoStatement->execute();
+    }
+
+    //fonction pour récuperer toutes les infos des templates
+    function getProductsBDD(){
+        $pdoStatement = $this->db->prepare('SELECT * FROM products');
+        $pdoStatement->execute();
+        return $pdoStatement->fetchAll();
+
+    }
 }

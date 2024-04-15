@@ -19,6 +19,6 @@
     <body>
         <?= $navbar ?>
         <?= $page_content ?>
-        <?= $footer ?>
+        <!-- <?= $footer ?> -->
     </body>
 </html>

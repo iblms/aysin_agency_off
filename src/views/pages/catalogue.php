@@ -3,7 +3,11 @@ $page = "catalogue";
 $title = "Aysin Agency - Le Marketing Digital d'excellence";
 require_once __DIR__ .'/../../utils/common.php';
 
-ob_start(); ?>
+ob_start();
+
+$infoCatalogue = $BDD->getProductsBDD(); //recupération des templates depuis la BDD
+
+?>
 
 <body>
     <?php require_once __DIR__ . '/../partials/navbar.php'; ?>
@@ -11,22 +15,25 @@ ob_start(); ?>
         <div class="slogan">
             <img src="<?=PROJECT_FOLDER ?>/src/images/component_7.svg" alt="" width="1440">
         </div>
-
         <div class="all-templates">
             <div class="box-template1">
+            <!-- affichage des templates une par une -->
+                <?php foreach($infoCatalogue as $row){?> <!-- on parcours le tableau avec les infos de chaque template et on les affiche -->
                 <div class="box1-element">
-                    <img id="img1" src="<?=PROJECT_FOLDER ?>/src/templates/acme1.png" alt="" width="357">
-                    <img id="img1" src="<?=PROJECT_FOLDER ?>/src/templates/acme2.png" alt="" width="357" hidden>
-                    <img id="img1" src="<?=PROJECT_FOLDER ?>/src/templates/acme3.png" alt="" width="357" hidden>
-                    <img id="img1" src="<?=PROJECT_FOLDER ?>/src/templates/acme4.png" alt="" width="357" hidden>
+                    <img id="img1" src="<?=PROJECT_FOLDER ?><?php echo '/src/templates/' . $row["product_img"] . '1.png' ?>" alt="" width="357">
+                    <img id="img1" src="<?=PROJECT_FOLDER ?><?php echo '/src/templates/' . $row["product_img"] . '2.png' ?>" alt="" width="357" hidden>
+                    <img id="img1" src="<?=PROJECT_FOLDER ?><?php echo '/src/templates/' . $row["product_img"] . '3.png' ?>" alt="" width="357" hidden>
+                    <img id="img1" src="<?=PROJECT_FOLDER ?><?php echo '/src/templates/' . $row["product_img"] . '4.png' ?>" alt="" width="357" hidden>
                     <div class="info-template">
                         <div class="title-prix">
-                            <p class="title-template">Nom de la template</p>
-                            <p class="prix">XX€</p>
+                            <p class="title-template"><?php echo $row["product_name"]?></p>
+                            <p class="prix"><?php echo $row["product_price"]?>€</p>
                         </div>
                         <button id="download1">Télécharger</button>
                     </div>
                 </div>
+                
+
 
                 <script>
                     // document.getElementById('download').addEventListener('click', () => {
@@ -68,32 +75,9 @@ ob_start(); ?>
                         document.body.removeChild(a);
                     }
                 </script>
-
-                <div class="box2-element">
-                    <img src="<?=PROJECT_FOLDER ?>/src/templates/mariela1.png" alt="" width="357">
-                    <!-- <img src="<?=PROJECT_FOLDER ?>/src/templates/mariela2.png" alt="" width="357" hidden>
-                    <img src="<?=PROJECT_FOLDER ?>/src/templates/mariela3.png" alt="" width="357" hidden>
-                    <img src="<?=PROJECT_FOLDER ?>/src/templates/mariela4.png" alt="" width="357" hidden> -->
-                    <div class="info-template">
-                        <div class="title-prix">
-                            <p class="title-template">Nom de la template</p>
-                            <p class="prix">XX€</p>
-                        </div>
-                        <button id="download2">Télécharger</button>
-                    </div>
-                </div>
-                <div class="box3-element">
-                    <img src="<?=PROJECT_FOLDER ?>/src/templates/terminal1.png" alt="" width="357">
-                    <div class="info-template">
-                        <div class="title-prix">
-                            <p class="title-template">Nom de la template</p>
-                            <p class="prix">XX€</p>
-                        </div>
-                        <button >Télécharger</button>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
-
+           
             <div class="box-template2">
                 <div></div>
                 <div></div>
@@ -112,6 +96,7 @@ ob_start(); ?>
                 <div></div>
             </div>
         </div>
+        
 
         <!-- <script>
             function downloadTemplate() {
