@@ -59,14 +59,14 @@
                         <div class="logo_link"><i class="fa-brands fa-instagram" style="color: black;"></i></div>
                     </a>
                     <a href="https://www.tiktok.com/fr/">
-                        <div class="logo_link"><i class="fa-brands fa-tiktok" style="color: black;"></i></div>
+                        <div class="logo_link"><i class="fa-brands fa-tiktok" style="color: white;"></i></div>
                     </a>
                     
                 </div>
                 <div class="logo_payment">
-                    <i class="fa-brands fa-cc-visa" style="color: black;"></i>
-                    <i class="fa-brands fa-cc-mastercard" style="color: black;"></i>
-                    <i class="fa-brands fa-cc-paypal" style="color: black;"></i>
+                    <i class="fa-brands fa-cc-visa" style="color: white;"></i>
+                    <i class="fa-brands fa-cc-mastercard" style="color: white;"></i>
+                    <i class="fa-brands fa-cc-paypal" style="color: white;"></i>
                     <i class="fa-brands fa-cc-apple-pay" style="color: black;"></i>
                 </div>
             </div>
