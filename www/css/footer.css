@@ -83,3 +83,30 @@ body {
 .footer_global{
     padding-top: 7rem;
 }
+
+.footer_second{
+    display: flex;
+    border-top: inset;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.logo_social {
+    border-radius: 5%;
+    font-size: 26px;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    padding-left: 5rem;
+}
+
+.logo_payment {
+    font-size: 30px;
+    display: flex;
+    gap: 15px;
+    margin-right: 15px;
+    padding: 1.5% 2.5%;
+}
