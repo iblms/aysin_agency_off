@@ -29,51 +29,33 @@ $infoCatalogue = $BDD->getProductsBDD(); //recupération des templates depuis la
                             <p class="title-template"><?php echo $row["product_name"]?></p>
                             <p class="prix"><?php echo $row["product_price"]?>€</p>
                         </div>
-                        <button id="download1">Télécharger</button>
+                        <!-- <button id="download1">Acheter</button> -->
+                        <a href="<?=PROJECT_FOLDER ?>/src/views/pages/checkout.php" id="download1">Acheter</a>
                     </div>
                 </div>
                 
 
 
                 <script>
-                    // document.getElementById('download').addEventListener('click', () => {
-                    // let img = document.getElementById('img1');
-                    // let imgPath = img.src;
-                    // let fileName = imgPath.substring(imgPath.lastIndexOf('/') + 1);
-                    // downloadFile(imgPath, fileName);
+                    // C'EST LA FONCTION POUR TÉLÉCHARGER LES TEMPLATES QUE J'AI COMMENTÉ
+                    
+                    // document.getElementById('download1').addEventListener('click', () => {
+                    // let images = document.querySelectorAll('.box1-element img, img[hidden]'); // Sélectionner toutes les balises img cachées
+                    //     images.forEach((img, index) => {
+                    //         let imgPath = img.src;
+                    //         let fileName = 'image_' + index + '.' + imgPath.split('.').pop(); // Créer des noms de fichiers uniques
+                    //         downloadFile(imgPath, fileName);
+                    //     });
                     // });
 
                     // function downloadFile(url, fileName) {
-                    //     // Créer un élément <a> temporaire
                     //     let a = document.createElement('a');
                     //     a.href = url;
                     //     a.download = fileName;
-
-                    //     // Ajouter l'élément <a> au DOM et simuler un clic
                     //     document.body.appendChild(a);
                     //     a.click();
-
-                    //     // Supprimer l'élément <a> du DOM après le téléchargement
                     //     document.body.removeChild(a);
                     // }
-
-                    document.getElementById('download1').addEventListener('click', () => {
-                    let images = document.querySelectorAll('.box1-element img, img[hidden]'); // Sélectionner toutes les balises img cachées
-                        images.forEach((img, index) => {
-                            let imgPath = img.src;
-                            let fileName = 'image_' + index + '.' + imgPath.split('.').pop(); // Créer des noms de fichiers uniques
-                            downloadFile(imgPath, fileName);
-                        });
-                    });
-
-                    function downloadFile(url, fileName) {
-                        let a = document.createElement('a');
-                        a.href = url;
-                        a.download = fileName;
-                        document.body.appendChild(a);
-                        a.click();
-                        document.body.removeChild(a);
-                    }
                 </script>
                 <?php } ?>
             </div>

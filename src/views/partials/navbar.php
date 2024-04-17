@@ -1,5 +1,4 @@
 <?php ob_start();
-// require_once '../../utils/common.php';
 ?>
 
 <body>
@@ -19,10 +18,18 @@
                         <li><a href="<?=PROJECT_FOLDER ?>www/?p=contact" style="font-family: Outfit, sans-serif;">Contact</a></li>
                     </div>
                 </ul>
-
+                <?php
+                if(isset($_SESSION["user_id"]))
+                { ?>
                 <div>
                     <button><a href="<?=PROJECT_FOLDER ?>www/?p=register">Inscription</a></button>
                 </div>
+                <?php }
+                else { ?>
+                <div>
+                    <button><a href="<?=PROJECT_FOLDER ?>www/?p=accueil">Se déconnecter</a></button>
+                </div>
+                <?php } ?>
             </div>
         </nav>
     </header>
